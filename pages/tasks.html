@@ -1,0 +1,208 @@
+<div class="page-header">
+    <h1 class="page-title">Tasks</h1>
+    <p class="page-subtitle">
+        Complete tasks and earn rewards.
+    </p>
+</div>
+<!-- Tasks Section -->
+<section class="tasks-section">
+  <div class="tasks-section__header">
+    <h2 class="section-title">Tasks</h2>
+    <button class="pill pill--ghost" type="button">
+      <span class="pill__dot pill__dot--accent"></span>
+      For you
+    </button>
+  </div>
+
+  <!-- Category Tabs -->
+  <div class="task-categories" id="taskCategories">
+    <button
+      class="task-category task-category--active"
+      data-category="all"
+      type="button"
+    >
+      All Tasks
+    </button>
+    <button class="task-category" data-category="daily" type="button">
+      Daily
+    </button>
+    <button class="task-category" data-category="social" type="button">
+      Social
+    </button>
+    <button class="task-category" data-category="survey" type="button">
+      Survey
+    </button>
+    <button class="task-category" data-category="referral" type="button">
+      Referral
+    </button>
+    <button class="task-category" data-category="bonus" type="button">
+      Bonus
+    </button>
+  </div>
+
+  <!-- Task List -->
+  <div class="task-list" id="taskList">
+    <!-- Example Task Cards -->
+    <article
+      class="task-card"
+      data-category="daily"
+    >
+      <div class="task-card__left">
+        <div class="task-icon task-icon--video">
+          <span>▶</span>
+        </div>
+        <div class="task-card__content">
+          <h3 class="task-title">Watch a Product Demo</h3>
+          <p class="task-desc">
+            Watch a short video and answer one question.
+          </p>
+          <div class="task-meta">
+            <span class="task-reward">Earn ₦50</span>
+            <span class="task-time">2 min</span>
+          </div>
+        </div>
+      </div>
+      <div class="task-card__right">
+        <span class="status-badge status-badge--active">Available</span>
+        <button class="btn btn--small btn--secondary">
+          Complete
+        </button>
+      </div>
+    </article>
+
+    <article
+      class="task-card"
+      data-category="daily"
+    >
+      <div class="task-card__left">
+        <div class="task-icon task-icon--read">
+          <span>📄</span>
+        </div>
+        <div class="task-card__content">
+          <h3 class="task-title">Read an Article</h3>
+          <p class="task-desc">
+            Scan a quick guide and answer a simple quiz.
+          </p>
+          <div class="task-meta">
+            <span class="task-reward">Earn ₦30</span>
+            <span class="task-time">1 min</span>
+          </div>
+        </div>
+      </div>
+      <div class="task-card__right">
+        <span class="status-badge status-badge--active">Available</span>
+        <button class="btn btn--small btn--secondary">
+          Complete
+        </button>
+      </div>
+    </article>
+
+    <article
+      class="task-card"
+      data-category="social"
+    >
+      <div class="task-card__left">
+        <div class="task-icon task-icon--social">
+          <span>＠</span>
+        </div>
+        <div class="task-card__content">
+          <h3 class="task-title">Follow Social Page</h3>
+          <p class="task-desc">
+            Follow a verified brand account on social media.
+          </p>
+          <div class="task-meta">
+            <span class="task-reward">Earn ₦100</span>
+            <span class="task-time">3 min</span>
+          </div>
+        </div>
+      </div>
+      <div class="task-card__right">
+        <span class="status-badge status-badge--hot">Trending</span>
+        <button class="btn btn--small btn--secondary">
+          Complete
+        </button>
+      </div>
+    </article>
+
+    <article
+      class="task-card"
+      data-category="survey"
+    >
+      <div class="task-card__left">
+        <div class="task-icon task-icon--survey">
+          <span>❓</span>
+        </div>
+        <div class="task-card__content">
+          <h3 class="task-title">Quick Feedback Survey</h3>
+          <p class="task-desc">
+            Share your opinion in a short multiple choice survey.
+          </p>
+          <div class="task-meta">
+            <span class="task-reward">Earn ₦250</span>
+            <span class="task-time">5 min</span>
+          </div>
+        </div>
+      </div>
+      <div class="task-card__right">
+        <span class="status-badge status-badge--limited">Limited</span>
+        <button class="btn btn--small btn--secondary">
+          Start
+        </button>
+      </div>
+    </article>
+
+    <article
+      class="task-card"
+      data-category="referral"
+    >
+      <div class="task-card__left">
+        <div class="task-icon task-icon--referral">
+          <span>🤝</span>
+        </div>
+        <div class="task-card__content">
+          <h3 class="task-title">Invite a Friend</h3>
+          <p class="task-desc">
+            Share your referral link and earn when they complete tasks.
+          </p>
+          <div class="task-meta">
+            <span class="task-reward">Earn ₦500</span>
+            <span class="task-time">Ongoing</span>
+          </div>
+        </div>
+      </div>
+      <div class="task-card__right">
+        <span class="status-badge status-badge--active">Active</span>
+        <button class="btn btn--small btn--secondary">
+          Share
+        </button>
+      </div>
+    </article>
+
+    <article
+      class="task-card"
+      data-category="bonus"
+    >
+      <div class="task-card__left">
+        <div class="task-icon task-icon--bonus">
+          <span>✨</span>
+        </div>
+        <div class="task-card__content">
+          <h3 class="task-title">Streak Bonus</h3>
+          <p class="task-desc">
+            Complete 3 tasks today to unlock a streak reward.
+          </p>
+          <div class="task-meta">
+            <span class="task-reward">Earn ₦300</span>
+            <span class="task-time">Today</span>
+          </div>
+        </div>
+      </div>
+      <div class="task-card__right">
+        <span class="status-badge status-badge--info">In progress</span>
+        <button class="btn btn--small btn--secondary">
+          View
+        </button>
+      </div>
+    </article>
+  </div>
+</section>

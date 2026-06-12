@@ -1,0 +1,47 @@
+:root {
+  --bg: #0f172a;
+  --bg-elevated: #1e293b;
+  --bg-elevated-soft: rgba(30, 41, 59, 0.92);
+  --glass: rgba(15, 23, 42, 0.62);
+  --border-subtle: rgba(148, 163, 184, 0.12);
+  --accent: #8b5cf6;
+  --accent-soft: rgba(139, 92, 246, 0.2);
+  --accent-secondary: #ec4899;
+  --accent-secondary-soft: rgba(236, 72, 153, 0.22);
+  --text: #ffffff;
+  --muted: #94a3b8;
+  --danger: #f97373;
+  --radius-lg: 22px;
+  --radius-xl: 26px;
+  --radius-pill: 999px;
+  --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.65);
+  --shadow-floating: 0 16px 40px rgba(15, 23, 42, 0.9);
+  --blur-strong: 26px;
+  --transition-fast: 160ms ease-out;
+  --transition-med: 220ms ease-out;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: radial-gradient(circle at top left, #1e293b 0, #020617 60%, #000 100%);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utility */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}

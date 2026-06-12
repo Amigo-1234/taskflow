@@ -1,0 +1,7 @@
+@import "./css/base.css";
+@import "./css/layout.css";
+@import "./css/nav.css";
+@import "./css/components.css";
+@import "./css/pages.css";
+
+/* // removed inline monolithic styling from styles.css – see css/*.css for modular styles */

@@ -1,0 +1,111 @@
+<section class="page-header">
+  <h1 class="page-title">Wallet</h1>
+  <p class="page-subtitle">
+    Monitor your balance, withdrawals, and earnings.
+  </p>
+</section>
+
+<section class="wallet-grid">
+  <!-- Wallet Balance -->
+  <article class="wallet-card wallet-card--balance">
+    <div class="wallet-card__header">
+      <span class="wallet-label">Total Balance</span>
+      <button class="pill pill--muted" type="button">
+        <span class="pill__dot"></span>
+        Safely stored
+      </button>
+    </div>
+    <div class="wallet-card__amount">₦38,540</div>
+    <div class="wallet-card__row">
+      <div>
+        <p class="wallet-label">Available</p>
+        <p class="wallet-value">₦32,100</p>
+      </div>
+      <div>
+        <p class="wallet-label">Pending</p>
+        <p class="wallet-value wallet-value--muted">₦6,440</p>
+      </div>
+    </div>
+    <div class="wallet-card__actions">
+      <button class="btn btn--primary btn--full" type="button">
+        Withdraw Funds
+      </button>
+    </div>
+  </article>
+
+  <!-- Earnings Analytics -->
+  <article class="wallet-card wallet-card--analytics">
+    <div class="wallet-card__header">
+      <span class="wallet-label">Earnings this week</span>
+      <span class="badge-soft badge-soft--success">+18%</span>
+    </div>
+    <div class="wallet-card__amount wallet-card__amount--small">
+      ₦9,850
+    </div>
+    <div class="analytics-chart">
+      <div class="analytics-bars">
+        <span style="--h:32%"></span>
+        <span style="--h:58%"></span>
+        <span style="--h:44%"></span>
+        <span style="--h:80%"></span>
+        <span style="--h:52%"></span>
+        <span style="--h:68%"></span>
+        <span style="--h:40%"></span>
+      </div>
+      <div class="analytics-days">
+        <span>M</span>
+        <span>T</span>
+        <span>W</span>
+        <span>T</span>
+        <span>F</span>
+        <span>S</span>
+        <span>S</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- History -->
+  <article class="wallet-card wallet-card--history">
+    <div class="wallet-card__header">
+      <span class="wallet-label">Recent Activity</span>
+    </div>
+    <div class="history-list">
+      <div class="history-item">
+        <div>
+          <p class="history-title">Withdrawal to bank</p>
+          <p class="history-meta">Jun 18 • 10:24</p>
+        </div>
+        <div class="history-amount history-amount--negative">
+          -₦15,000
+        </div>
+      </div>
+      <div class="history-item">
+        <div>
+          <p class="history-title">Task earnings</p>
+          <p class="history-meta">Jun 18 • 09:12</p>
+        </div>
+        <div class="history-amount history-amount--positive">
+          +₦1,250
+        </div>
+      </div>
+      <div class="history-item">
+        <div>
+          <p class="history-title">Referral bonus</p>
+          <p class="history-meta">Jun 17 • 19:40</p>
+        </div>
+        <div class="history-amount history-amount--positive">
+          +₦500
+        </div>
+      </div>
+      <div class="history-item">
+        <div>
+          <p class="history-title">Task earnings</p>
+          <p class="history-meta">Jun 17 • 14:05</p>
+        </div>
+        <div class="history-amount history-amount--positive">
+          +₦980
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
