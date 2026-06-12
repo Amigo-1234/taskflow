@@ -13,20 +13,24 @@
 
   width: 100%;
   max-width: 100%;
-  padding: 10px 14px calc(72px + env(safe-area-inset-bottom, 12px));
+  padding: 0 0 calc(72px + env(safe-area-inset-bottom, 12px));
 }
 
 .main {
   flex: 1;
   position: relative;
   overflow: hidden;
-  border-radius: calc(var(--radius-xl) + 2px);
-  background: radial-gradient(
-    circle at top,
-    rgba(148, 163, 184, 0.16),
-    rgba(15, 23, 42, 0.98)
-  );
-  box-shadow: 0 18px 50px rgba(15, 23, 42, 1);
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.top-nav {
+  margin: 12px 16px;
+}
+
+.page {
+  padding: 0 16px 20px;
 }
 
 .page {
