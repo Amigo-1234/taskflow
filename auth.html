@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TaskFlow – Sign In</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/auth.css" />
+  </head>
+  <body>
+    <div class="auth-root">
+      <div class="auth-shell">
+        <!-- Brand header -->
+        <header class="auth-brand">
+          <div class="auth-logo-mark">
+            <span>TF</span>
+          </div>
+          <div class="auth-logo-text">
+            <span class="auth-logo-title">TaskFlow</span>
+            <span class="auth-logo-subtitle">Tasks • Rewards • Wallet</span>
+          </div>
+        </header>
+
+        <!-- Screen container -->
+        <main class="auth-main">
+          <section
+            class="auth-screen auth-screen--active"
+            data-screen="splash"
+          >
+            <!-- splash.html will be injected here -->
+          </section>
+        </main>
+      </div>
+
+      <!-- Loading overlay -->
+      <div id="auth-loading-overlay" class="auth-overlay">
+        <div class="auth-overlay__backdrop"></div>
+        <div class="auth-overlay__card auth-overlay__card--loading">
+          <div class="overlay-spinner">
+            <div class="overlay-spinner__ring"></div>
+            <div class="overlay-spinner__core"></div>
+          </div>
+          <p class="overlay-title">Just a moment...</p>
+          <p class="overlay-subtitle">Securely preparing your workspace.</p>
+        </div>
+      </div>
+
+      <!-- Feedback overlay (error/success) -->
+      <div id="auth-feedback-overlay" class="auth-overlay">
+        <div class="auth-overlay__backdrop"></div>
+        <div class="auth-overlay__card">
+          <div class="feedback-icon" data-state="success">
+            <span class="feedback-checkmark"></span>
+          </div>
+          <div class="feedback-icon feedback-icon--error" data-state="error">
+            <span class="feedback-error-line feedback-error-line--left"></span>
+            <span class="feedback-error-line feedback-error-line--right"></span>
+          </div>
+          <p class="overlay-title" id="feedback-title"></p>
+          <p class="overlay-subtitle" id="feedback-message"></p>
+          <button
+            type="button"
+            class="btn btn--primary btn--full"
+            id="feedback-primary-action"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./js/auth.js"></script>
+  </body>
+</html>

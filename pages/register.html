@@ -1,0 +1,133 @@
+<div class="auth-content">
+  <section class="auth-hero">
+    <div>
+      <h1 class="auth-heading">Create your TaskFlow account.</h1>
+      <p class="auth-body">
+        Join a calm, focused workspace for earning from simple micro tasks.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <form id="register-form" class="auth-form" novalidate>
+      <div class="auth-form__group">
+        <div class="field">
+          <input
+            id="register-name"
+            class="field__input"
+            type="text"
+            name="fullName"
+            autocomplete="name"
+            placeholder=" "
+            required
+          />
+          <label class="field__label" for="register-name">Full name</label>
+        </div>
+
+        <div class="field">
+          <input
+            id="register-username"
+            class="field__input"
+            type="text"
+            name="username"
+            autocomplete="username"
+            placeholder=" "
+            required
+          />
+          <label class="field__label" for="register-username">Username</label>
+        </div>
+
+        <div class="field">
+          <input
+            id="register-email"
+            class="field__input"
+            type="email"
+            name="email"
+            autocomplete="email"
+            placeholder=" "
+            required
+          />
+          <label class="field__label" for="register-email">Email</label>
+        </div>
+
+        <div class="field">
+          <input
+            id="register-password"
+            class="field__input"
+            type="password"
+            name="password"
+            autocomplete="new-password"
+            placeholder=" "
+            required
+          />
+          <label class="field__label" for="register-password">Password</label>
+          <button
+            type="button"
+            class="field__addon"
+            id="register-password-toggle"
+            aria-label="Show or hide passwords"
+          >
+            👁
+          </button>
+        </div>
+
+        <div class="field">
+          <input
+            id="register-confirm-password"
+            class="field__input"
+            type="password"
+            name="confirmPassword"
+            autocomplete="new-password"
+            placeholder=" "
+            required
+          />
+          <label
+            class="field__label"
+            for="register-confirm-password"
+          >
+            Confirm password
+          </label>
+        </div>
+
+        <div class="field">
+          <input
+            id="register-referral"
+            class="field__input"
+            type="text"
+            name="referral"
+            autocomplete="off"
+            placeholder=" "
+          />
+          <label class="field__label" for="register-referral">
+            Referral code (optional)
+          </label>
+        </div>
+      </div>
+
+      <label class="checkbox-row">
+        <input type="checkbox" name="terms" required />
+        <span>
+          I agree to the
+          <button type="button" class="auth-link auth-link--muted">
+            Terms &amp; Conditions
+          </button>
+        </span>
+      </label>
+
+      <button type="submit" class="btn btn--primary btn--full">
+        <span>Create account</span>
+      </button>
+
+      <p class="auth-cta-inline">
+        Already have an account?
+        <button
+          type="button"
+          class="auth-link"
+          data-auth-target="login"
+        >
+          Sign in
+        </button>
+      </p>
+    </form>
+  </section>
+</div>
